@@ -74,7 +74,8 @@ export default class App extends Component{
   <Route path="/Login"  component={()=> <Login Login={this.Login}/>} />
   <Route path="/Homepage"  component={()=><Homepage/>} />
   <Route path="/SignUp" component={()=> <SignUp SignUp={this.SignUp} /> }/>
-  
+    
+    
   {/* <Route path="/food" component={Food}/>
   <Route path="/sport" component={Sport}/>
   <Route path="/wieght" component={Weight}/>
