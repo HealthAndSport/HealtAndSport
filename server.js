@@ -4,8 +4,8 @@ const cors = require('cors');
 const app =express()
 const Tamimi=require("./Server/Tamimi")
 const Roaa=require("./Server/Roaa")
-const Najdawi=("./Server/Najdaw")
-const Momani=("./Server/Momani")
+const Najdawi=require("./Server/Najdaw")
+const Momani=require("./Server/Momani")
 
 
 app.use(cors());
