@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+
 import Homepage from './Component/Homepage';
 import SignUp from './Component/SignUp';
 import Login from './Component/Login';
@@ -68,7 +69,7 @@ export default class App extends Component{
   render(){
   return (
     <>
-    
+   
 
     <Router>
   <Route path="/Login"  component={()=> <Login Login={this.Login}/>} />
@@ -80,6 +81,7 @@ export default class App extends Component{
   <Route path="/wieght" component={Weight}/>
   <Route path="/dite" component={Dite}/>
   <Route path="/commnaction" component={Commcation}/> */}
+
     </Router>
     </>
   );

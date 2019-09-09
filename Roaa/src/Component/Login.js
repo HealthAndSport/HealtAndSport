@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Navbar'
 import Footer from './Footer';
@@ -14,6 +15,7 @@ Login=(input)=>{
   console.log(input.target.value);
     this.setState({
       
+
         [input.target.name]: input.target.value
     })
   //   console.log(input.target.value);
@@ -23,6 +25,7 @@ Login=(input)=>{
   render(){
   return (
     <>
+
    <Navbar/>
        {/* <img style={{maxWidth:'100px', maxHeight:'100px',   padding: "70px 0px", textAlign: "center" }} src={require('../Assets/facebook.svg')}></img> */}
         <div className="col-6 col-sm-3" style={{  margin: "10% 20% 10% 40%",padding:"80px",borderRadius:"10px",fontFamily:' Amaranth' ,fontSize:'20px',width:"100%",border:"2px solid" ,width: "30%" }}>
@@ -40,6 +43,7 @@ Login=(input)=>{
        <a href="/SignUp"style={{textAlign: "center"}}>Create an Account.....</a>
       </div>
       <Footer/>
+
     </>
   );
   
