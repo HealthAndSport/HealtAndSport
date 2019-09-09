@@ -26,9 +26,27 @@ let login = mongoose.model("login", signupschema)
 
 
 
+let Myschema=new mongoose.Schema({
+  Url:String,
+  Name:String,
+ 
+ 
+ })
+ 
+ let tipschema=new mongoose.Schema({
+   tips:Array
+  
+  
+  })
+ 
+ let Tip=mongoose.model("tip",tipschema)
+  
+ 
+ let Diet=mongoose.model("diet",Myschema)
+ 
 
 
 
 
 
-module.exports = { login }
+module.exports = { login,Tip,Diet }
