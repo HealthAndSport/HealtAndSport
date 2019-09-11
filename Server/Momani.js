@@ -24,6 +24,25 @@ router.get("/tips",(req,res)=>{
 })
 
 
+router.put("/chat/:post",(req,res)=>{
+  let post=req.params.post
+  Momani.addpost(post,result=>{
+    res.json(result)
+  })
+})
 
+router.put("/newcomment/:comment/:id",(req,res)=>{
+let comment=req.params.comment
+let id=req.params.id
+Momani.addcomment(comment,id,result=>{
+  res.json(result)
+})
+})
+
+router.get("/get",(req,res)=>{
+  Momani.getpost(result=>{
+    res.json(result)
+  })
+  })
 
 module.exports=router;

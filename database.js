@@ -45,8 +45,14 @@ let Myschema=new mongoose.Schema({
  let Diet=mongoose.model("diet",Myschema)
  
 
+ let chatschema=new mongoose.Schema({
+   post:String,
+  comment:Array
+ 
+ 
+ })
+
+ let Chat=mongoose.model("chat",chatschema)
 
 
-
-
-module.exports = { login,Tip,Diet }
+module.exports = { login,Tip,Diet,Chat }

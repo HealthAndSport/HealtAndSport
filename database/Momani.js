@@ -33,6 +33,41 @@ let DietName=(Name,cb)=>{
         })
     }
 
+let addpost=(post,cb)=>{
+  db.Chat.create({post},(err,data)=>{
+    if(err){
+      console.log(err)
+    
+      }  else
+      {
+        getpost(cb)
+    } 
+  })
+}
+let getpost=(cb)=>{
+  db.Chat.find({},{comment:1,post:1},(err,data)=>{
+    if(err){
+      console.log(err)
+    
+      }  else
+      {
+        cb(data)
+    }   
+  }).sort({_id:-1})
+}
+
+
+addcomment=(comment,id,cb)=>{
+  db.Chat.update({_id:id},{$push:{comment:comment}},(err,data)=>{
+    if(err){
+      console.log(err)
+    
+      }  else
+      {
+        getpost(cb)
+    }   
+  })
+}
 
 
     let Creatediet=(Url,Name)=>{
@@ -84,6 +119,6 @@ let MyDiet=()=>{
 
     
 module.exports = { 
-  Gettips,DietName,init
+  Gettips,DietName,init,addpost,addcomment,getpost
 }
 

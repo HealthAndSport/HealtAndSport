@@ -1,9 +1,11 @@
 import React ,{Component}from 'react';
-import DietTable from './Comp/DietTable'
-import Tips from './Comp/Tips'
+import DietTable from './DietTable'
+import Tips from './Tips'
+
+
 const axios = require('axios');
 
-class App extends Component{
+class AppMomani extends Component{
   state={ Url:"",tips:"",Name:""}
 
   category=(e)=>{
@@ -56,12 +58,23 @@ class App extends Component{
 
 {this.state.Url.length>0 && < DietTable table={this.state.Url} title={this.state.Name}/>}
 {this.state.tips.length>0&&this.state.Url.length===0&&<h1>Tips For Stick With Healthy Diet</h1>}
-{this.state.tips.length>0&&this.state.Url.length===0 &&this.state.tips.map((elem,i)=> <Tips tip={elem} key={i}/>)}
+{this.state.tips.length>0&&this.state.Url.length===0 &&this.state.tips.map((elem,i)=> <Tips tip={elem} key={i}/>)} 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
     </>
   );
 }
 }
-export default App;
+export default AppMomani;
 
 
 
