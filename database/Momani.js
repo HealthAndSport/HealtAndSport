@@ -58,7 +58,7 @@ let getpost=(cb)=>{
 
 
 addcomment=(comment,id,cb)=>{
-  db.Chat.update({_id:id},{$push:{comment:comment}},(err,data)=>{
+  db.Chat.updateOne({_id:id},{$push:{comment:comment}},(err,data)=>{
     if(err){
       console.log(err)
     
