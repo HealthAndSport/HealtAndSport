@@ -6,7 +6,7 @@ let init = (cb) => {
     console.log(" hello")
   }
 
-  
+  //test
 let DietName=(Name,cb)=>{
   db.Diet.find({Name},(err,data)=>{
     if(err){
