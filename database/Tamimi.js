@@ -1,4 +1,5 @@
 
+
 const db = require('../database');
 
 let init = (cb) => {
@@ -8,6 +9,3 @@ let init = (cb) => {
  
  
  module.exports = { init }
-
-  
-
