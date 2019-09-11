@@ -1,8 +1,6 @@
 import React ,{Component}from 'react';
 import DietTable from './DietTable'
 import Tips from './Tips'
-
-
 const axios = require('axios');
 
 class AppMomani extends Component{
