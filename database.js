@@ -16,9 +16,9 @@ db.once('open', function () {
 
 
 let signupschema = new mongoose.Schema({
-  Name: String,
- Pass:Number,
- Email:String
+  name: String,
+ pass:Number,
+ email:String
 
 })
 
@@ -26,9 +26,33 @@ let login = mongoose.model("login", signupschema)
 
 
 
+let Myschema=new mongoose.Schema({
+  Url:String,
+  Name:String,
+ 
+ 
+ })
+ 
+ let tipschema=new mongoose.Schema({
+   tips:Array
+  
+  
+  })
+ 
+ let Tip=mongoose.model("tip",tipschema)
+  
+ 
+ let Diet=mongoose.model("diet",Myschema)
+ 
+
+ let chatschema=new mongoose.Schema({
+   post:String,
+  comment:Array
+ 
+ 
+ })
+
+ let Chat=mongoose.model("chat",chatschema)
 
 
-
-
-
-module.exports = { login }
+module.exports = { login,Tip,Diet,Chat }
