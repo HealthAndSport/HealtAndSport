@@ -9,8 +9,8 @@ class DietTable extends Component{
   return (
   <>
   
- <img src ={this.props.table} alt="" width="50%" ></img>
-<a href={link} download><button   style={{marginLeft:"-330px"}}className="btn btn-outline-primary">Download</button></a> 
+ <img src ={link} alt="" width="60%" height="90%" style={{position:"relative",bottom:"-30px",left:"-102px"}} ></img>
+<a href={link} download><button  className="btn btn-outline-success">Download</button></a> 
 
     </>
   );
