@@ -16,6 +16,7 @@ render(){
      </div>  
 <Footer/>
         </>
+
     );
 }
 }
