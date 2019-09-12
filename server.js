@@ -9,6 +9,7 @@ const Momani=require("./Server/Momani")
 
 
 app.use(cors());
+app.use(express.json())
 app.use("/Tamimi",Tamimi);
 app.use("/Roaa",Roaa);
 app.use("/Najdawi",Najdawi);
