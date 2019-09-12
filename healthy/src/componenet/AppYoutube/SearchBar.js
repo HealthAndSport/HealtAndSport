@@ -21,6 +21,10 @@ export class SearchBar extends Component {
 
             <div className="form-group" style={{ margin: "9%" }}>
 
+<h3 className="display-4 text-center">
+                <i className="fas fa-dumbbell fa-1x"/> Search for a workout
+                </h3>
+
                 <input
 
 
