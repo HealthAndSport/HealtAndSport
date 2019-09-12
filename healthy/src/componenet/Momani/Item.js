@@ -49,16 +49,18 @@ this.setState({counter:i,model:!this.state.model})
         </div> 
         <button onClick={this.view}>view comment</button>
         <div>
+       {this.state.view&&this.props.post.comment.map((elem,i)=> <Comment elem={elem} key={i}  />)}
        
-       {this.state.view&&this.props.post.comment.map((elem,i)=> <Comment elem={elem} key={i} />)}
+       {this.props.post.comment.length===0&&this.state.view&&<p>No comment yet</p>}
         {this.state.view&&<input value={this.state.comment} onChange={this.addcomment.bind(this)}></input>}
         {this.state.view&& <button onClick={this.mynewcomment.bind(this,this.props.post._id)}>add comment</button>}
+         
         </div>
         {this.state.i.length>0&&this.props.updatecomment()}
         </div>
     :""}
 
-{/*      
+      
  <div className="container">
  <button type="button"  onClick={this.flag} className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">flag</button>
  <div className="modal fade" id="myModal" role="dialog">
@@ -79,7 +81,7 @@ this.setState({counter:i,model:!this.state.model})
    </div>
  </div>
  
-</div>   */}
+</div>   
 
 
 
