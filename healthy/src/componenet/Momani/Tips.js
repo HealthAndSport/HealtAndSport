@@ -9,11 +9,11 @@ class Tips extends Component{
   return (
   <>
  
-  <div>
-      
-  <ul>
-      <li>{this.props.tip}</li>
-  </ul>
+  <div style={{padding:"20px"}}>
+   
+    {this.props.tip}
+   
+  
   </div>
     </>
   );
