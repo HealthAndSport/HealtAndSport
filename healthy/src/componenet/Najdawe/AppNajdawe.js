@@ -15,6 +15,7 @@ function Hala() {
         <Route path="/obese" component={Obese}/>
         </Router>
     </div>
+
   );
 }
 
