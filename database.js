@@ -17,7 +17,9 @@ db.once('open', function () {
 
 let signupschema = new mongoose.Schema({
   name: String,
- pass:Number,
+
+ password:Number,
+
  email:String
 
 })
