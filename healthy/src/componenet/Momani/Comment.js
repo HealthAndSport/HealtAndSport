@@ -8,7 +8,7 @@ class Comment extends Component{
         return (
           
         <>
-      
+    
        <div className="card">{this.props.elem}</div>
         
           </>
