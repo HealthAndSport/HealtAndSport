@@ -10,7 +10,7 @@ export class Card extends Component {
         videos: ""
 
             };
-
+// done
     componentDidMount = () => {
 
         axios.get(
